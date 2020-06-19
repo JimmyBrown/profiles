@@ -13,11 +13,11 @@ class ProfilesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     func setupViews() {
-           
+           addEmitter()
+        
        }
        
        func addEmitter() {
