@@ -56,15 +56,23 @@
 		BF5DDBF3249D4D290092AC39 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				BF5DDBF4249D4D290092AC39 /* AppDelegate.swift */,
-				BF5DDBF6249D4D290092AC39 /* SceneDelegate.swift */,
+				BF5DDC08249D4D380092AC39 /* Resources */,
 				BF5DDBF8249D4D290092AC39 /* ViewController.swift */,
 				BF5DDBFA249D4D290092AC39 /* Main.storyboard */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		BF5DDC08249D4D380092AC39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5DDBF4249D4D290092AC39 /* AppDelegate.swift */,
+				BF5DDBF6249D4D290092AC39 /* SceneDelegate.swift */,
 				BF5DDBFD249D4D2A0092AC39 /* Assets.xcassets */,
 				BF5DDBFF249D4D2A0092AC39 /* LaunchScreen.storyboard */,
 				BF5DDC02249D4D2A0092AC39 /* Info.plist */,
 			);
-			path = Profiles;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = Profiles/Info.plist;
+				INFOPLIST_FILE = Profiles/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = Profiles/Info.plist;
+				INFOPLIST_FILE = Profiles/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
