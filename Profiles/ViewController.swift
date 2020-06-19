@@ -12,12 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
     }
     
+    func setupViews() {
+        
+    }
     
+    func addEmitter() {
+           let emitter = Emitter.get(with: #imageLiteral(resourceName: "Star"))
+           emitter.emitterPosition = CGPoint(x: view.frame.width / 2, y: 0)
+           emitter.emitterSize = CGSize(width: view.frame.width, height: 1)
+           view.layer.insertSublayer(emitter, at: 0)
+       }
+    
+   
 
-
-}
+} // END OF CLASS
 
