@@ -9,6 +9,13 @@
 import UIKit
 
 class ProfilesViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var iamImageView: UIImageView!
+    @IBOutlet weak var jimmyImageView: UIImageView!
+    @IBOutlet weak var ianButton: UIButton!
+    @IBOutlet weak var jimmyButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
