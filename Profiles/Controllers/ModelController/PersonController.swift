@@ -9,9 +9,10 @@
 import Foundation
 
 class PersonController {
+    
+    static let shared = PersonController()
+    
     var profile: [Person] = []
-    
-    
     
     // MARK - Persistance
           func createFileForPersistantStore() -> URL {

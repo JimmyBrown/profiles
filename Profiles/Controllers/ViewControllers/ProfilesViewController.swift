@@ -12,10 +12,18 @@ class ProfilesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupViews()
     }
     
     func setupViews() {
+        let personArray: [Person] = []
+         let person1 = Person(name: "Ian", bio: "Aspiring iOS Developer at DevMountain!", image: #imageLiteral(resourceName: <#T##String#>))
+        let person2 = Person(name: "Jimmy", bio: "Aspiring iOS Developer at DevMountain!", image: #imageLiteral(resourceName: <#T##String#>))
+        
+        personArray.append(person1)
+        personArray.append(person2)
+        
+        PersonController.shared.profile = personArray
            addEmitter()
         
        }
