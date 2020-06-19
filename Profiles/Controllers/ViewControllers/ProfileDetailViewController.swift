@@ -10,13 +10,12 @@ import UIKit
 
 class ProfileDetailViewController: UIViewController {
     
+    var person: Person?
+    
     // MARK: - Outlets
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bioTextField: UITextView!
     
-    // MARK: - Actions
-    
-    @IBOutlet weak var doneButtonTapped: UIBarButtonItem!
     
 
     override func viewDidLoad() {
@@ -25,6 +24,15 @@ class ProfileDetailViewController: UIViewController {
     
     }
     
-
+    // MARK: - Actions
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setupViews() {
+        guard let person = person else { return }
+        nameLabel.text = person.name
+        
+    }
 
 }

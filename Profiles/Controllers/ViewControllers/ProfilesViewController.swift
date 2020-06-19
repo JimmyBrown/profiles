@@ -9,6 +9,13 @@
 import UIKit
 
 class ProfilesViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var iamImageView: UIImageView!
+    @IBOutlet weak var jimmyImageView: UIImageView!
+    @IBOutlet weak var ianButton: UIButton!
+    @IBOutlet weak var jimmyButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +32,12 @@ class ProfilesViewController: UIViewController {
         
         PersonController.shared.profile = personArray
            addEmitter()
+        
+        self.iamImageView.layer.cornerRadius = iamImageView.frame.height / 2
+        self.jimmyImageView.layer.cornerRadius = jimmyImageView.frame.height / 2
+        self.iamImageView.image = person1.image
+        self.jimmyImageView.image = person2.image
+        
         
        }
        
